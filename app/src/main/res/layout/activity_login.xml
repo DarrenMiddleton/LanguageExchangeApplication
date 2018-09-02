@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_horizontal"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:id="@+id/img_kcelogo"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight="0.20"
+        android:nestedScrollingEnabled="false"
+        android:src="@drawable/kcelogo"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"/>
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtKNumber"
+        android:layout_marginBottom="15dp"
+        android:hint="K Number"
+        android:background="@drawable/bg_sharp"
+        android:padding="6dp"
+        android:maxLength="8"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPassword"
+        android:hint="Password"
+        android:password="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/bg_sharp"
+        android:padding="6dp"
+        android:maxLines="1"
+        />
+
+    <Button
+        android:layout_width="136dp"
+        android:layout_height="34dp"
+        android:text="Sign in"
+        android:id="@+id/button"
+        android:background="@drawable/button_rounded"
+        android:clickable="true"
+        android:onClick="onClickLogin"
+        android:layout_marginBottom="35dp"
+        android:textSize="20dp"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="New user?"
+        android:id="@+id/textNewUser"
+        android:clickable="true"
+        android:onClick="onClickNewUser"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.06"
+        android:textSize="20dp"
+        android:textColor="#a5a5a5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Or forgot your password?"
+        android:id="@+id/textView"
+        android:clickable="true"
+        android:onClick="onClickForgotPass"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.10"
+        android:textSize="16dp"
+        android:textColor="#a5a5a5"/>
+
+</LinearLayout>

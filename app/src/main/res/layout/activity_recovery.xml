@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Okay, tell us your K Number and we&apos;ll send a reset code to your King&apos;s email account"
+        android:id="@+id/txtExplain"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="22dp"
+        android:layout_marginLeft="22dp"
+        android:textSize="18dp"/>
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtKnumber1"
+        android:hint="K Number"
+        android:background="@drawable/bg_sharp"
+        android:padding="6dp"
+        android:layout_marginBottom="25dp"/>
+
+    <Button
+        android:layout_width="136dp"
+        android:layout_height="34dp"
+        android:text="Done"
+        android:id="@+id/btnDone"
+        android:background="@drawable/button_rounded"
+        android:clickable="true"
+        android:onClick="onClickDone"
+        android:layout_marginBottom="35dp"
+        android:textSize="20dp"
+        android:textAllCaps="false"/>
+
+</LinearLayout>

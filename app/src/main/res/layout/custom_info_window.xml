@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:layout_width="62dp"
+        android:layout_height="77dp"
+        android:src="@drawable/custom_marker"
+        android:id="@+id/imageView" />
+
+    <ImageView
+        android:layout_marginLeft="5dp"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:src="@drawable/default_avatar"
+        android:id="@+id/imgperson"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="true"/>
+
+</RelativeLayout>

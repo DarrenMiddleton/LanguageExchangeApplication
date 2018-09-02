@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView7">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:weightSum="1"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imgProfileImage"
+                    android:src="@drawable/default_avatar"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtProfileName"
+                        android:layout_below="@+id/imgProfileImage"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:text="Name"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/textColorPrimary"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtAgeSex"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/txtProfileLname"
+                        android:layout_alignParentLeft="true"
+                        android:text="20/F"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtProfileID"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/txtProfileLname"
+                        android:layout_alignParentLeft="true"
+                        android:text="KNumber"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="16dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20px"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="top|center_horizontal"
+                    android:layout_weight="2"
+                    >
+
+                    <Space
+                        android:layout_width="1dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:id="@+id/imageView8"
+                        android:src="@drawable/ic_edit_black_24dp"
+                        android:layout_weight="3"
+                        android:onClick="onClickEditProfile"/>
+
+                    <Space
+                        android:layout_width="1dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"/>
+
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/scrollView5"
+                    android:layout_weight="8"
+                    android:fillViewport="false"
+                    android:fadeScrollbars="false"
+                    android:background="@drawable/bg_rounded"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/linLayLanguages"
+                        android:paddingLeft="22dp"
+                        android:paddingRight="22dp"
+                        >
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/imageView10"
+                android:background="#cbcbcb"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:id="@+id/txtProfileBio"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/txtProfilePractice"
+                android:layout_alignParentLeft="true"
+                android:text="Bio"
+                android:paddingLeft="22dp"
+                android:paddingTop="4dp"
+                android:paddingRight="22dp"
+                android:paddingBottom="8dp"
+                android:textSize="18dp"
+                android:textColor="@color/textColorPrimary"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/imageView11"
+                android:background="#cbcbcb"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Score Viewer"
+                    android:id="@+id/textView16"
+                    android:layout_marginRight="40dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Badge Viewer"
+                    android:id="@+id/textView17"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

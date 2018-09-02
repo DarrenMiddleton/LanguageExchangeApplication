@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:fillViewport="true" >
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:paddingTop="5dip"
+			android:paddingLeft="5dip"
+			android:text="Private Room"
+			android:id="@+id/textView2"
+			android:textColor="#000000"
+			android:textStyle="bold"
+			android:textAlignment="center" />
+
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:id="@+id/imageView2"
+			android:paddingRight="5dip"
+			android:paddingLeft="5dip"
+			android:paddingTop="5dip"
+			android:src="@drawable/line" />
+	</LinearLayout>
+
+	<TableLayout
+		android:paddingTop="@dimen/main_padding"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<TableRow>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:text="@string/conference_id_label"
+				android:textColor="@color/text_field_color"
+				android:layout_marginLeft="@dimen/main_margin"
+				android:gravity="center_vertical"
+				android:textAppearance="?android:attr/textAppearanceMedium">
+			</TextView>
+
+			<EditText
+				android:id="@+id/session_field"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/main_margin"
+				android:layout_marginRight="@dimen/main_margin"
+				android:inputType="text"
+				android:singleLine="true"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:hint="@string/enter_session_id"
+				android:textColorHint="@color/hint_color"
+				android:textAppearance="?android:attr/textAppearanceMedium" >
+				<requestFocus />
+			</EditText>
+
+		</TableRow>
+		<TableRow
+			android:layout_marginTop="@dimen/main_margin"
+			android:gravity="center">
+			<Button
+				android:id="@+id/join_button"
+				android:layout_width="fill_parent"
+				android:layout_marginLeft="@dimen/main_margin"
+				android:layout_marginRight="@dimen/main_margin"
+				android:text="@string/join_title"
+				android:layout_weight="1"
+				android:clickable="true">
+			</Button>
+		</TableRow>
+
+	</TableLayout>
+
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:paddingTop="5dip"
+			android:paddingLeft="5dip"
+			android:text="Public Rooms"
+			android:id="@+id/textView3"
+			android:textColor="#000000"
+			android:textStyle="bold"
+			android:textAlignment="center" />
+
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:id="@+id/imageView3"
+			android:paddingRight="5dip"
+			android:paddingLeft="5dip"
+			android:paddingTop="5dip"
+			android:src="@drawable/line" />
+	</LinearLayout>
+
+	<GridLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Room"
+			android:id="@+id/button100"
+			android:layout_row="1"
+			android:layout_column="0" />
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Room2"
+			android:id="@+id/button101"
+			android:layout_row="1"
+			android:layout_column="1" />
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Room3"
+			android:id="@+id/button102"
+			android:layout_row="2"
+			android:layout_column="0" />
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Room4"
+			android:id="@+id/button103"
+			android:layout_row="2"
+			android:layout_column="1" />
+
+	</GridLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:paddingTop="5dip"
+			android:paddingLeft="5dip"
+			android:text="You"
+			android:id="@+id/textView4"
+			android:textColor="#000000"
+			android:textStyle="bold"
+			android:textAlignment="center" />
+
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:id="@+id/imageView4"
+			android:paddingRight="5dip"
+			android:paddingLeft="4dip"
+			android:paddingTop="5dip"
+			android:src="@drawable/line" />
+	</LinearLayout>
+
+	<com.voyd.kclexchange.ui.VideoPanelPreviewRect
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:id="@+id/preview_rect"
+		android:fillViewport="true" >
+
+
+		<FrameLayout
+			android:layout_centerInParent="true"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:paddingRight="110dip"
+			android:paddingLeft="110dip"
+			android:paddingTop="10dip"
+			android:paddingBottom="10dip"
+			android:orientation="vertical" >
+			<com.oovoo.sdk.api.ui.VideoPanel
+				android:id="@+id/preview_view"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:isScrollContainer="false">
+			</com.oovoo.sdk.api.ui.VideoPanel>
+
+
+			<com.voyd.kclexchange.ui.CustomVideoPanel
+				android:id="@+id/custom_preview_view"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:isScrollContainer="false">
+			</com.voyd.kclexchange.ui.CustomVideoPanel>
+
+			<TextView
+				android:id="@+id/display_name_text_view"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="top"
+				android:gravity="center"
+				android:text="@string/me"
+				android:textColor="@android:color/white"
+				android:background="@color/black_overlay"/>
+		</FrameLayout>
+
+	</com.voyd.kclexchange.ui.VideoPanelPreviewRect>
+
+
+</LinearLayout>
